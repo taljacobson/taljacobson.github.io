@@ -22,17 +22,61 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 
 }
 
 .coverText h1 {
+    text-shadow: 2px 2px 2px green;
     font-size: 7vw;
+      transition-duration: 200ms;
 }
 
-.coverText note {
+.coverText h1:hover {
+  transform: scale(1.3) rotateX(30deg);
+  text-shadow: -2px 2px 2px green;
+  transition-duration: 500ms;
+  overflow: hidden;
+}
+
+.coverText .note {
+    text-shadow: 3px 3px 2px #ae0f0e;
   color: #f0f0f0
 }
 
 .progresing div {
   margin-top: 0.2em;
 }
+
+#profile-image {
+
+  border-radius: 50%;
+      filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+        transition-duration: 300ms
+
+}
+#profile-image:hover {
+        filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    transform: scale(1.2);
+    transition-duration: 300ms
+}
+
+.image-blurred-edge {
+    border-radius: 50%;
+    width: 265px;
+    height: 265px;
+    box-shadow: 0 0 8px 8px #000;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+} 
