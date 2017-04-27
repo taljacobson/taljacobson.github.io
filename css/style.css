@@ -1,0 +1,38 @@
+.cover-container {
+  position: relative;
+}
+
+.cover {
+  position: relative;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.coverText {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.coverText h1 {
+    font-size: 7vw;
+}
+
+.coverText note {
+  color: #f0f0f0
+}
+
+.progresing div {
+  margin-top: 0.2em;
+}
