@@ -67,15 +67,16 @@ h1, h2, h3, p {
 
 #showcase .bg-image {
   position: absolute;
-  /* background: var(--main-background) url('http://www.dataxad.com/wp-content/uploads/2016/04/Optimized-black-and-white-city-skyline-buildings.jpg'); */
   background:var(--form-primary);
+  background: var(--main-background) url('http://www.dataxad.com/wp-content/uploads/2016/04/Optimized-black-and-white-city-skyline-buildings.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 75vh;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.6;
+  background-blend-mode: multiply, overlay;
 }
 
 #showcase .fullscreen-video-wrap{
@@ -299,10 +300,11 @@ h1, h2, h3, p {
     scroll = default
   */
   background-attachment: fixed;
-  background-image: url('https://static.pexels.com/photos/248515/pexels-photo-248515.png');
+  background-image: url('https://avatars0.githubusercontent.com/u/13042769?v=3&s=460');
+  background-color:  var(--form-primary) ;
+  background-blend-mode: overlay; 
   min-height: 100vh;
   min-width: 100vw;
-  background-color: rgba(222, 164, 14, .3);
 }
 
 
