@@ -25,7 +25,9 @@
     </div>
     <div class="content-wrap">
       <div id="logo"></div>
-      <h1><span class="typing">Tal A. Jacobson</span></h1>
+      <h1>
+        <span class="typing">Tal A. Jacobson</span>
+      </h1>
       <p>Full Stack /Web Developer</p>
       <a href="#section-b" class="btn">Read more</a>
     </div>
@@ -107,11 +109,11 @@
                 aria-valuemax="100">React</div>
             </div>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 60%" aria-valuenow="100" aria-valuemin="0"
-                  aria-valuemax="100">node</div>
-              </div>
+              <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 60%" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100">node</div>
+            </div>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0"
+              <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0"
                 aria-valuemax="100">React-native</div>
             </div>
             <div class="progress">
@@ -145,13 +147,18 @@
           </div>
         </div> -->
 
-        <h2 class="content-title">
-          Tal A. Jacobson
-          <span>Full Stack /Web Developer</span>
-        </h2>
-        <div class="content-text">
-          <p></p>
+        <div class="pimg">
+          <div class="ptext">
+            <span class="border trans">
+                Tal A. Jacobson<br>
+                <span>Full Stack<br>Web Developer</span>
+            </span>
+          </div>
         </div>
+
+        <!-- <div class="content-text">
+          <p></p>
+        </div> -->
       </div>
     </section>
 
@@ -167,9 +174,17 @@
   </footer>
 
   <script>
-    const video =  document.getElementById('video');
+    const header = document.getElementById('showcase');
+    let headerHeight = header.offsetHeight;
+    const video = document.getElementById('video');
     video.currentTime = 1;
-    video.play()
+    video.play().then(() => {
+    document.onscroll = ((event) => {
+      video.pause();
+    })
+
+    })
+
   </script>
 
 </body>
