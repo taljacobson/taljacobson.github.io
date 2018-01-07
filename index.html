@@ -5,177 +5,168 @@
   <title>Tal jacobson</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="css/style.css" rel="stylesheet">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-    crossorigin="anonymous">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top ">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#profile">Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Technologies">Technologies</a>
-        </li>
 
-      </ul>
+  <!-- Header showcase -->
+  <header id="showcase" class="grid">
+    <div class="fullscreen-video-wrap">
+      <!--  https://www.videvo.net/video/typing-on-computer-white-bg/4475/ -->
+      <!-- DO NOT USE THIS VIDEO, I JUST NEEDED A HOSTED VIDEO FOR THIS CODEPEN> USE THE ONE ABOVE -->
+      <video src="https://production.cdmycdn.com/assets/marketing-pages/intensives/bws/coding-scenes-9a2031e8142b40bdb5d936d5eef33dfa.mp4"
+        autoplay="" loop="">
+      </video>
     </div>
-  </nav>
-
-  <section id="home">
-    <div class="cover-container">
-      <img src="images/nightsky.jpg" class="cover" alt="night sky">
-      <div class="coverText">
-        <h1 class="display-3">the stars arent the limit</h1>
-        <h6 class="note ">
-          only your imagination
-        </h6>
-      </div>
+    <div class="bg-image">
     </div>
-  </section>
+    <div class="content-wrap">
+      <div id="logo"></div>
+      <h1><span class="typing">Tal A. Jacobson</span></h1>
+      <p>Full Stack /Web Developer</p>
+      <a href="#section-b" class="btn">Read more</a>
+    </div>
+  </header>
 
-  <section id="profile">
-    <div class="container marketing">
 
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-9">
-          <h2 class="featurette-heading">Tal A. Jacobson <span class="text-muted">Web Developer</span></h2>
-          <p class="lead">
-            self taught programmer, interested in all web related technologies, from simple WordPress static sites to cross platform
-            native apps with React-native or Nativescript. not much experience with Back-end other then Firebase functions
-            and AWS lambda which i use in most of my small projects. have some experience with computer hardware and local
-            networking from a high school CCNA course.
+  <!-- Main Area -->
+  <main id="main">
+    <section id="section-a" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Tal Jacobson</h2>
+        <div class="content-text">
+          <p>self taught programmer, interested in all web related technologies, from simple WordPress static sites to cross
+            platform native apps with React-native or Nativescript. not much experience with Back-end other then Firebase
+            functions and AWS lambda which i use in most of my small projects. have some experience with computer hardware
+            and local networking from a high school CCNA course.
           </p>
-        </div>
-        <div class="col-md-3 hidden-md-down ">
-          <div class="image-blurred-edge">
-          <img class="featurette-image img-fluid mx-auto" id="profile-image" src="https://avatars0.githubusercontent.com/u/13042769?v=3&s=460" alt="Generic placeholder image">
-          </div>
+
         </div>
       </div>
+    </section>
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-3 ">
-          <img class="featurette-image img-fluid mx-auto" src="https://camo.githubusercontent.com/bee74950383ddc4e236d55102a92d66356bfbecc/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f37323931392f3338313630362f66666664643239302d613565322d313165322d383039392d6531623564383238366461332e6a7067"
-            alt="github logo">
-        </div>
-        <div class="col-md-9 ">
-          <h2 class="featurette-heading">experience <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">
-            my <a href="https://github.com/taljacobson">github</a> page has some projects i did, mostly with the intention
-            of learning new technologies and keeping track of what i`ve learned.
-          </p>
-        </div>
-
-      </div>
-
-      <hr class="featurette-divider" id="Technologies">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">technologies. <span class="text-muted">here's a few</span></h2>
-          <p class="lead">mostly learned web technologies, with the emphasis on front end frameworks`s/library's like React and angular,
-            i've been trying out my skills with some backend languages such as node, PHP and Python with AWS lambda, firebase
-            functions and WordPress.
-          </p>
-        </div>
-        <div class="col-md-5 progresing">
+    <section id="section-b" class="grid">
+      <ul>
+        <li class="card-shadow">
           <div class="card">
-            <div class="card-header">
-              <code>colors indicate confidence</code>
+            <img src="https://static.pexels.com/photos/248515/pexels-photo-248515.png" alt="programing">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Development</h3>
+            <p>mostly learned web technologies, with the emphasis on front end frameworks`s/library's like React and angular,
+              i've been trying out my skills with some backend languages such as node, PHP and Python with AWS lambda, firebase
+              functions and WordPress.</p>
+          </div>
+        </li>
+        <li class="card-shadow">
+          <div class="card">
+            <img src="https://camo.githubusercontent.com/bee74950383ddc4e236d55102a92d66356bfbecc/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f37323931392f3338313630362f66666664643239302d613565322d313165322d383039392d6531623564383238366461332e6a7067"
+              alt="github logo">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Experience</h3>
+            <p>my
+              <a href="https://github.com/taljacobson">github</a> page has some projects i did, mostly with the intention of learning new technologies and keeping
+              track of what i`ve learned.</p>
+          </div>
+        </li>
+        <li class="card-shadow">
+          <div class="card">
+            <img src="https://static.pexels.com/photos/248515/pexels-photo-248515.png" alt="programing">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">technologies</h3>
+          </div>
+
+          <div class="card-content flex">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100">javascript</div>
             </div>
-            <div class="card-block">
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="0" aria-valuemin="0"
-                  aria-valuemax="100">javascript</div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0"
-                  aria-valuemax="100">HTML</div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0"
-                  aria-valuemax="100">CSS</div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0"
-                  aria-valuemax="100">Angular</div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0"
-                  aria-valuemax="100">Ionic</div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0"
-                  aria-valuemax="100">React</div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0"
-                  aria-valuemax="100">React-native</div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0"
-                  aria-valuemax="100">Nativescript</div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 35%" aria-valuenow="100" aria-valuemin="0"
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">HTML</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0"
+                aria-valuemax="100">CSS</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100">Angular</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100">Ionic</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100">React</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 60%" aria-valuenow="100" aria-valuemin="0"
                   aria-valuemax="100">node</div>
               </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0"
-                  aria-valuemax="100">PHP</div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 15%" aria-valuenow="100" aria-valuemin="0"
-                  aria-valuemax="100">Python</div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 10%" aria-valuenow="100" aria-valuemin="0"
-                  aria-valuemax="100">GOLang</div>
-              </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100">React-native</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100">Nativescript</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100">PHP</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 15%" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100">Python</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 10%" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100">GOLang</div>
             </div>
           </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="section-c" class="grid">
+      <div class="content-wrap">
+
+        <!-- <div class="bio">
+        <div class="image">
+          <div class="image-blurred-edge">
+            <img id="profile-image" src="https://avatars0.githubusercontent.com/u/13042769?v=3&s=460" alt="Generic placeholder image">
+          </div>
+        </div> -->
+
+        <h2 class="content-title">
+          Tal A. Jacobson
+          <span>Full Stack /Web Developer</span>
+        </h2>
+        <div class="content-text">
+          <p></p>
         </div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
+    </section>
 
 
+  </main>
+  <!-- Footer -->
+  <footer id="main-footer" class="grid">
+    <div>Tal Jacobson</div>
+    <div>
+      <a href="#section-c">contact Me</a>
+      <a href="mailto:tal1989+github@gmail.com">My Email</a>
     </div>
-    <!-- /.container -->
-  </section>
+  </footer>
 
-  <section id="links">
 
-  </section>
-
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
