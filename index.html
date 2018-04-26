@@ -35,7 +35,9 @@
     </div>
     <div class="content-wrap">
       <div id="logo"></div>
-      <h1><span class="typing">Tal A. Jacobson</span></h1>
+      <h1>
+        <span class="typing">Tal A. Jacobson</span>
+      </h1>
       <p>Full Stack /Web Developer</p>
       <a href="#section-b" class="btn">Read more</a>
     </div>
@@ -158,8 +160,10 @@
         <div class="pimg">
           <div class="ptext">
             <span class="border trans">
-                Tal A. Jacobson<br>
-                <span>Full Stack<br>Web Developer</span>
+              Tal A. Jacobson
+              <br>
+              <span>Full Stack
+                <br>Web Developer</span>
             </span>
           </div>
         </div>
@@ -182,31 +186,33 @@
   </footer>
 
   <script>
-    const header = document.getElementById('showcase');
-    let headerHeight = header.offsetHeight;
-    const video = document.getElementById('video');
-    video.currentTime = 1;
-    video.play().then(() => {
-    document.onscroll = ((event) => {
-      video.pause();
-    })
+    (() => {
 
-    })
+      const header = document.getElementById('showcase');
+      let headerHeight = header.offsetHeight;
+      const video = document.getElementById('video');
 
-
-    // color Change
-    const colorsElems = document.querySelectorAll('span.color');
-    const rootEl = document.querySelector(':root')
-    colorsElems.forEach(element => {
-      element.addEventListener('click', (e) => {
-        console.log(e.target.style)
-        rootEl.style.setProperty('--main-background', 
-        e.target.style.background);
-        rootEl.style.setProperty('--main-color', 
-        e.target.style.color);
+      video.currentTime = 1;
+      video.play().then(() => {
+        document.onscroll = ((event) => {
+          video.pause();
+        })
       })
-    });
 
+
+      // color Change
+      const colorsElems = document.querySelectorAll('span.color');
+      const rootEl = document.querySelector(':root')
+      colorsElems.forEach(element => {
+        element.addEventListener('click', (e) => {
+          console.log(e.target.style)
+          rootEl.style.setProperty('--main-background',
+            e.target.style.background);
+          rootEl.style.setProperty('--main-color',
+            e.target.style.color);
+        })
+      });
+    })()
   </script>
 
 </body>
