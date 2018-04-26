@@ -15,8 +15,8 @@
 }
 
 ::selection {
-  background: var(--main-background);
-  color: var(--main-color);
+  background: var(--main-color);
+  color:  var(--main-background);
 }
 
 li {
@@ -223,6 +223,10 @@ h1, h2, h3, p {
   .content-wrap, 
   #section-b ul {
     grid-column: 2/4;
+  }
+  
+  #section-c .content-wrap  {
+    grid-column: 1/-1;
   }
   .box, #main-footer div {
     grid-column: span 2;
@@ -439,7 +443,7 @@ h1, h2, h3, p {
   margin-right: 2em;
 }
 
-.color-menu label::before {
+.color-menu label:before {
   position: absolute;
   content: "\270e";
   line-height: 1;
@@ -453,7 +457,7 @@ input#color-icon {
   display: none;
 }
 
-input:checked~label::before {
+input:checked~label:before {
   animation: spin 300ms linear forwards;
 }
 
@@ -485,6 +489,7 @@ input:checked ~ .colors-menu {
   width: 2em;
   line-height: 2;
   font-family: initial;
+  cursor: pointer;
 }
 
 

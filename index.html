@@ -186,20 +186,13 @@
   </footer>
 
   <script>
+    //@TS-check
     (() => {
 
       const header = document.getElementById('showcase');
       let headerHeight = header.offsetHeight;
+      /**@property {HTMLMediaElement} video */
       const video = document.getElementById('video');
-
-      video.currentTime = 1;
-      video.play().then(() => {
-        document.onscroll = ((event) => {
-          video.pause();
-        })
-      })
-
-
       // color Change
       const colorsElems = document.querySelectorAll('span.color');
       const rootEl = document.querySelector(':root')
@@ -212,6 +205,15 @@
             e.target.style.color);
         })
       });
+      video.currentTime = 1;
+      video.play().then(() => {
+        document.onscroll = ((event) => {
+          video.pause();
+        })
+      })
+
+
+
     })()
   </script>
 
