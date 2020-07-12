@@ -79,7 +79,7 @@ h1, h2, h3, p {
 #showcase .bg-image {
   position: absolute;
   background:var(--form-primary);
-  background: var(--main-background) url('/images/pexels-photo-350397.jpeg');
+  background: var(--main-background) url('/assets/images/pexels-photo-350397.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,6 +154,8 @@ h1, h2, h3, p {
   background: var(--common-bg);
   color: var(--common-color);
   transition: all 100ms linear;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .card-shadow {
@@ -266,26 +268,26 @@ h1, h2, h3, p {
 }
 
 .progress-bar {
-  background: var(--form-primary);
+  background: linear-gradient(90deg, var(--progress-color ,var(--form-primary)), #fff 160%); 
   /* color: #696969; */
   white-space: nowrap;
 }
 
 
 .bg-success {
-  background: var(--color-success);
+  --progress-color: var(--color-success);
 }
 
 .bg-info {
-  background: var(--color-info, #4848ff)
+  --progress-color: var(--color-info, #4848ff)
 }
 
 .bg-warning {
-  background: var(--color-warning, #f1d900)
+  --progress-color: var(--color-warning, #f1d900)
 }
 
 .bg-danger {
-  background: var(--color-danger, rgb(255, 51, 0))
+  --progress-color: var(--color-danger, rgb(255, 51, 0))
 }
 
 @keyframes typing { from { width: 0; } }
