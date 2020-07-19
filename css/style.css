@@ -160,6 +160,7 @@ h1, h2, h3, p {
 
 .card-shadow {
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+  visibility: hidden;
 }
 
 .card-content {
@@ -263,14 +264,28 @@ h1, h2, h3, p {
   word-wrap: normal;
   background: rgba(0, 0, 0, 0.03);
   border-radius: 25px;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.2rem;
+  position: relative;
+  height: 1.5rem;
+}
 
+.progress .progress-bar-name {
+  margin: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .progress-bar {
   background: linear-gradient(90deg, var(--progress-color ,var(--form-primary)), #fff 160%); 
   /* color: #696969; */
   white-space: nowrap;
+  height: 100%;
 }
 
 
@@ -529,4 +544,41 @@ input:checked ~ .colors-menu {
     content: "\2716";
     transform: rotate(0deg) skewX(0);
   }
+}
+
+
+.hidden {
+  display: none;
+}
+
+@keyframes reveal-tech {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+   to {
+     opacity: 1;
+   }
+}
+
+.show-tech .progress-bar {
+  animation: reveal-tech 1s linear  forwards;
+}
+
+
+
+@keyframes reveal-card {
+  from {
+    opacity: 0;
+    transform: translatex(-1000px);
+  }
+  to {
+     opacity: 1;
+     transform: translatex(0px);
+    }    
+}
+  
+.reveal-card {
+  visibility: visible;
+  animation: reveal-card 300ms linear forwards;
 }
