@@ -127,6 +127,19 @@ h1, h2, h3, p {
  padding: 0 1.5em;
 }
 
+h2.content-title {
+  line-height: 1.5;
+  font-size: 2rem;
+  font-family: fangsong;
+  letter-spacing: 0.4rem; 
+}
+
+.content-text {
+  font-size: 1.3rem;
+  letter-spacing: 0.12rem;
+  font-family: Roboto,Open-Sans,sans-serif;
+}
+
 /* section A */
 #section-a {
   padding-top: calc(25vh / 50%);

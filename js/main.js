@@ -6,7 +6,7 @@
   // @ts-ignore
   let headerHeight = header.offsetHeight;
   /**@property {HTMLMediaElement} video */
-  const video = document.getElementById('video');
+  const videoEl = document.getElementById('video');
   // color Change
   const colorsElems = document.querySelectorAll('span.color');
   const rootEl = document.querySelector(':root')
@@ -25,14 +25,16 @@
     })
   });
   // @ts-ignore
-  video.currentTime = 1;
+  videoEl.currentTime = 1;
   // @ts-ignore
-  video.play().then(() => {
+  videoEl.play().then(() => {
     // @ts-ignore
     // @ts-ignore
     document.onscroll = ((event) => {
+
+      const { bottom } = videoEl.getBoundingClientRect();
+      const  scrollTop  =event.target
       // @ts-ignore
-      video.pause();
     })
   })
 
@@ -135,45 +137,54 @@
 
       switch (entry.target.id) {
         case 'technologies-list':
-          if(!entry.isIntersecting) {
+          if (!entry.isIntersecting) {
             return;
           }
           const elements = document.getElementById(entry.target.id).childNodes
-          
+
           elements.forEach(node => {
             // @ts-ignore
             node.classList.remove('hidden');
-            
+
             node.childNodes.forEach((_node) => {
               // @ts-ignore
               node.classList.add('show-tech')
             })
           })
-          
+
           break;
         case 'technologies':
-          
-          if(entry.isIntersecting) {
+
+          if (entry.isIntersecting) {
             observer.observe(document.getElementById('technologies-list'));
           } else {
             return;
           }
         case 'Experience':
         case 'Development':
-          if(!entry.isIntersecting) {
+          if (!entry.isIntersecting) {
             return;
           }
 
-          
+
           const element = document.getElementById(entry.target.id);
           element.classList.add('reveal-card');
 
+          break;
+        case 'showcase':
+          if(entry.isIntersecting) {
+            videoEl.play();
+          } else {
+            videoEl.pause();  
+
+          }
+        
           break;
         default:
           break;
       }
 
-    
+
     });
   }
 
@@ -184,15 +195,11 @@
     threshold: 0.9,
   });
 
-  
- 
   observer.observe(document.getElementById('technologies'));
   observer.observe(document.getElementById('Experience'));
 
   observer.observe(document.getElementById('Development'));
-
-
   
-
+  observer.observe(document.getElementById('showcase'));
 
 })()
